@@ -1,0 +1,14 @@
+if (value === '' || parseInt(value) === +value) {
+  setBook((prevState) => ({
+    ...prevState,
+    [name]: value
+  }));
+} 
+
+const allFieldsFilled = values.every((field) => {
+    const value = `${field}`.trim();
+    return value !== '' && value !== '0';
+  });
+
+  history.push('/');
+
